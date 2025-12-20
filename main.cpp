@@ -82,7 +82,22 @@ ll mpow(ll a , ll b , ll M){
     }
     return ret;
 }
-
+template<typename T>
+bool chmax(T &a, T b) {
+  if (a < b) {
+    a = b;
+    return 1;
+  }
+  return 0;
+}
+template<typename T>
+bool chmin(T &a, T b) {
+  if (a > b) {
+    a = b;
+    return 1;
+  }
+  return 0;
+}
 /////////main/////////
 
 int main()
